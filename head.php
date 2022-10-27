@@ -26,16 +26,25 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
     ?>
 
 <header>
+    <h1>
+        <a href="/">
+            <img src="<?php echo G5_THEME_URL ?>/img/top_logo.png" alt="">
+        </a>
+    </h1>
+    <div class="title" style="background:url(../img/main_m0<?=$page_num?>.jpg); height:400px">
+    <?=$page_num?> / <?=$sub_title?> / <?=$page_title?>
+    </div>
     <nav>
         <ul>
-            <li><a href="/">home</a></li>
+            <li><a href="/">home <?=$page_num?></a></li>
             <li><a href="<?php echo G5_THEME_URL ?>/doc/m011.php">sub01</a></li>
-            <li><a href="">sub02</a></li>
-            <li><a href="">sub03</a></li>
+            <li><a href="<?php echo G5_THEME_URL ?>/doc/m012.php">sub02</a></li>
+            <li><a href="<?php echo G5_THEME_URL ?>/doc/m013.php">sub03</a></li>
             <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=qa">Q &amp; A Board</a></li>
             <li><a href="<?php echo G5_BBS_URL ?>/register.php">회원가입</a></li>
             <li><a href="<?php echo G5_BBS_URL ?>/login.php">로그인</a></li>
             <li><a href="<?php echo G5_URL ?>/adm">관리자</a></li>
         </ul>
     </nav>
+   
 </header>
